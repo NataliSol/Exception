@@ -47,4 +47,19 @@ public class BankApplication {
 
         desiredAccount.setBalance(desiredAccount.getBalance() - amount);
     }
+    public void processCheck (String accountId, int amount, String currency){
+        try {
+            process(accountId, amount, currency);
+        } catch (WrongAccountException wrongAccountException){
+            System.out.println("Такого акаунту не існує");
+        } catch (WrongCurrencyException wrongCurrencyException){
+            System.out.println("Акаунт має рахунок в іншій валюті");
+        } catch (WrongOperationException wrongOperationException){
+            System.out.println("Акаунт не має достатньо коштів");
+        } catch (Exception exception){
+            System.out.println("Сталася помилка при процесінгу, спробуйте ще раз");
+        } finally {
+            System.out.println("Дякуємо, що скористалися нашим сервісом");
+        }
+    }
 }
