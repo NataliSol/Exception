@@ -31,45 +31,45 @@ public class Main {
             System.out.println("Сталася помилка при процесінгу, спробуйте ще раз");
         } finally {
             System.out.println("Дякуємо, що скористалися нашим сервісом");
-            try {
-                bankApplication.process("accountId001", 50, "EUR");
-            } catch (WrongAccountException e) {
-                System.out.println("Такого акаунту не існує");
-            } catch (WrongCurrencyException e) {
-                System.out.println("Акаунт має рахунок в іншій валюті");
-            } catch (WrongOperationException e) {
-                System.out.println("Акаунт не має достатньо коштів");
-            } catch (Exception e) {
-                System.out.println("Сталася помилка при процесінгу, спробуйте ще раз");
-            } finally {
-                System.out.println("Дякуємо, що скористалися нашим сервісом");
-                try {
-                    bankApplication.process("accountId001", 50, "USD");
-                } catch (WrongAccountException e) {
-                    System.out.println("Такого акаунту не існує");
-                } catch (WrongCurrencyException e) {
-                    System.out.println("Акаунт має рахунок в іншій валюті");
-                } catch (WrongOperationException e) {
-                    System.out.println("Акаунт не має достатньо коштів");
-                } catch (Exception e) {
-                    System.out.println("Сталася помилка при процесінгу, спробуйте ще раз");
-                } finally {
-                    System.out.println("Дякуємо, що скористалися нашим сервісом");
-                    try {
-                        bankApplication.process("accountId001", 50, "USD");
-                    } catch (WrongAccountException e) {
-                        System.out.println("Такого акаунту не існує");
-                    } catch (WrongCurrencyException e) {
-                        System.out.println("Акаунт має рахунок в іншій валюті");
-                    } catch (WrongOperationException e) {
-                        System.out.println("Акаунт не має достатньо коштів");
-                    } catch (Exception e) {
-                        System.out.println("Сталася помилка при процесінгу, спробуйте ще раз");
-                    } finally {
-                        System.out.println("Дякуємо, що скористалися нашим сервісом");
-                    }
-                }
-            }
+        }
+        try {
+            bankApplication.process("accountId001", 50, "EUR");
+        } catch (WrongAccountException e) {
+            System.out.println("Такого акаунту не існує");
+        } catch (WrongCurrencyException e) {
+            System.out.println("Акаунт має рахунок в іншій валюті");
+        } catch (WrongOperationException e) {
+            System.out.println("Акаунт не має достатньо коштів");
+        } catch (Exception e) {
+            System.out.println("Сталася помилка при процесінгу, спробуйте ще раз");
+        } finally {
+            System.out.println("Дякуємо, що скористалися нашим сервісом");
+        }
+        try {
+            bankApplication.process("accountId001", 50, "USD");
+        } catch (WrongAccountException e) {
+            System.out.println("Такого акаунту не існує");
+        } catch (WrongCurrencyException e) {
+            System.out.println("Акаунт має рахунок в іншій валюті");
+        } catch (WrongOperationException e) {
+            System.out.println("Акаунт не має достатньо коштів");
+        } catch (Exception e) {
+            System.out.println("Сталася помилка при процесінгу, спробуйте ще раз");
+        } finally {
+            System.out.println("Дякуємо, що скористалися нашим сервісом");
+        }
+        try {
+            bankApplication.process("accountId001", 50, "USD");
+        } catch (WrongAccountException e) {
+            System.out.println("Такого акаунту не існує");
+        } catch (WrongCurrencyException e) {
+            System.out.println("Акаунт має рахунок в іншій валюті");
+        } catch (WrongOperationException e) {
+            System.out.println("Акаунт не має достатньо коштів");
+        } catch (Exception e) {
+            System.out.println("Сталася помилка при процесінгу, спробуйте ще раз");
+        } finally {
+            System.out.println("Дякуємо, що скористалися нашим сервісом");
         }
     }
 }
